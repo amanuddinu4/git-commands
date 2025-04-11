@@ -63,4 +63,5 @@
     git pull origin feature<br>
     
     git pull origin feature-1<br>
-    
+
+    Created pull requests before merging to the main branch using GitHub<br>
