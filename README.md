@@ -30,20 +30,37 @@
     git branch<br>
     git checkout feature<br>
     
-    git push origin feature<br>
+    git push origin feature<br> 
+    
     git pull origin main<br>
+    
     git branch<br>
+    
     Creating a new branch named feature-1<br>
+    
     git checkout feature-1<br>
+    
     ls<br>
+    
     vi main.tf<br>
+    
     Added a new Nginx container in main.tf file.
+    
     ls<br>
-    Created a tag named release-2 using Github<br> 
+    
+    Created a tag named release-2 using Github<br>
+    
     git checkout main<br>
+    
     git pull origin main<br>
+    
     vi main.tf<br>
+    
     git branch<br>
+    
     git pull origin main<br>
+    
     git pull origin feature<br>
+    
     git pull origin feature-1<br>
+    
