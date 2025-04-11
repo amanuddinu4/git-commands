@@ -11,6 +11,11 @@ terraform {
 # Configure the Docker provider
 provider "docker" {}
 
+# Define the Docker image
+resource "docker_image" "nginx_image" {
+  name         = "nginx:latest"
+  keep_locally = false
+}
 
 # Define the PostgreSQL Docker image
 resource "docker_image" "postgres_image" {
@@ -22,7 +27,15 @@ resource "docker_image" "redis_image" {
   name         = "redis:latest"
   keep_locally = false
 }
-
+# Create a Docker container
+resource "docker_container" "nginx_container" {
+  name  = "nginx_server"
+  image = docker_image.nginx_image.name
+  ports {
+    internal = 80
+    external = 8080
+  }
+}
 # Create a PostgreSQL Docker container
 resource "docker_container" "postgres_container" {
   name  = "postgres_server"
