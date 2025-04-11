@@ -1,5 +1,5 @@
 # GIT-COMMANDS<br><br><br>
-# Created a local folder and accessed it through Git-Bash<br><br>
+Created a local folder and accessed it through Git-Bash<br><br>
   Initialized Git -<br>
     git init<br>
     ls<br>
